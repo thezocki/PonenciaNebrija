@@ -82,7 +82,8 @@ def summarize_arche(world):
                 example["health_shape"] = getattr(health, "shape")
     return nchunks, total, example
 
-#def bench(n_entities=100000, iters=20, profile=False):
+"""
+def bench(n_entities=100000, iters=20, profile=False):
     print(f"numpy available: {'yes' if np else 'no'}")
     w_simple = make_world(n_entities); register_demo_systems(w_simple,"simple")
     w_sparse = make_world(n_entities); register_demo_systems(w_sparse,"sparse")
@@ -117,7 +118,7 @@ def summarize_arche(world):
         s = io.StringIO()
         pstats.Stats(pr, stream=s).sort_stats("cumulative").print_stats(50)
         print(s.getvalue())
-#
+"""
 
 def bench_arche_numpy(n_entities=1000000, iters=20, profile=False):
     print(f"NumPy available: {'yes' if np else 'no'}")
