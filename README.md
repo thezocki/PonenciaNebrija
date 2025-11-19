@@ -156,16 +156,11 @@ Opciones:
 
 ---
 
-## Ejemplo de uso
+## Benchmark with 10,000 entities
+![Benchmark with 10,000 entities](imgs/benchmark_10000.png)
 
-```python
-from ecs_benchmark_optimized import World, System, sys_move_archetype, sys_damage_archetype
+## Benchmark with 100,000 entities
+![Benchmark with 100,000 entities](imgs/benchmark_100000.png)
 
-world = World(use_archetype=True, use_numpy=True)
-eid = world.create_entity({"pos": (0,0), "vel": (1,1), "health": 100})
-
-world.register_system(System("move", {"pos","vel"}, {"pos"}, sys_move_archetype))
-world.register_system(System("damage", {"health"}, {"health"}, sys_damage_archetype))
-
-world.schedule_and_run(dt=1.0)
-```
+## Benchmark with 1,000,000 entities
+![Benchmark with 1,000,000 entities](imgs/benchmark_1000000.png)
