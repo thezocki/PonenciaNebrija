@@ -138,7 +138,7 @@ bench(n_entities=100000, iters=20, profile=False)
 Ejecutable desde la terminal:
 
 ```bash
-python ecs_benchmark_optimized.py -n 100000 -i 20 --profile
+python -m benchmark -n 100000 -i 20 --profile
 ```
 
 Opciones:
