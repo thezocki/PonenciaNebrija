@@ -2,6 +2,8 @@
 
 Este proyecto es una implementación educativa y optimizada de un **ECS (Entity-Component-System)** en Python, diseñada para explorar diferentes estrategias de almacenamiento de componentes y realizar micro-benchmarks de rendimiento. Soporta **SimpleStorage**, **SparseSet** y **Archetype/Chunk**, incluyendo aceleración con **NumPy**, planificación de sistemas y profiling.
 
+[Benchmark Results](BENCHMARK_RESULTS.md)
+
 ---
 
 ## Características
