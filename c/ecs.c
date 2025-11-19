@@ -9,8 +9,8 @@
 
 // Tunables
 #define CHUNK_CAP 2048      // número de entidades por chunk (ajusta para tu CPU L1/L2)
-#define N_ENTITIES 100000000
-#define N_ITERS 20
+#define N_ENTITIES 1000000
+#define N_ITERS 50
 
 typedef struct {
     int count;

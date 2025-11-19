@@ -3,7 +3,7 @@ from collections import defaultdict, deque
 from concurrent.futures import ThreadPoolExecutor
 from typing import Dict, Set
 from .sample import (
-    bench,
+    bench_arche_numpy,
 )
 
 try:
@@ -20,7 +20,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    bench(n_entities=args.entities, iters=args.iters, profile=args.profile)
+    #bench(n_entities=args.entities, iters=args.iters, profile=args.profile)
+    bench_arche_numpy(n_entities=args.entities, iters=args.iters, profile=args.profile)
 
 if __name__=="__main__":
     main()
