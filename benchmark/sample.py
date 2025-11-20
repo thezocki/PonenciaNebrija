@@ -151,8 +151,6 @@ def bench_arche_numpy(n_entities=1000000, iters=20, profile=False):
     t0 = time.perf_counter()
     with ThreadPoolExecutor(max_workers=8) as ex:
         for _ in range(iters):
-            # si tu World.schedule_and_run ejecuta los systems registrados, úsalo
-            # aquí asumimos que schedule_and_run lanza los systems archetype en paralelo.
             world.schedule_and_run(parallel=True, use_threads=True, _executor=ex)
     t1 = time.perf_counter()
     total_par = t1 - t0
