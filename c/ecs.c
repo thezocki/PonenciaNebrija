@@ -1,4 +1,3 @@
-// ecs_ultra.c
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
@@ -242,7 +241,7 @@ int main(int argc, char** argv) {
         archetype_add_entity(world, eid, px, py, vx, vy, h);
     }
 
-    printf("Running ultra ECS bench: entities=%d iters=%d threads=%d AVX2=%s\n",
+    printf("Running ECS bench: entities=%d iters=%d threads=%d AVX2=%s\n",
            n, iters, omp_get_max_threads(),
 #ifdef __AVX2__
            "yes"
